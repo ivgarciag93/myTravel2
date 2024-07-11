@@ -1,0 +1,628 @@
+{
+  "countries":  [
+    {
+      "name": "Alemania",
+      "cities": [
+        {
+          "name": "Berlín",
+          "dates": "1 al 7 de julio (2023)",
+          "travel": [
+            {
+              "day": "1",
+              "dayWeek": "SÁB",
+              "places": [
+                {
+                  "name": "Aeropuerto Madrid Barajas",
+                  "shortDesc": "Rumbo a Berlín",
+                  "desc": "1 de julio - Iberia",
+                  "img": "https://images.adsttc.com/media/images/58ad/fea7/e58e/ce4c/d100/009f/medium_jpg/E03_Vista_exterior_dique_NET.jpg?1487797921",
+                  "maps": "40.49213220756998,-3.595880390418275",
+                  "url": "https://www.aena.es/es/adolfo-suarez-madrid-barajas.html"
+                }
+              ]
+            },
+            {
+              "day": "2",
+              "dayWeek": "DOM",
+              "places": [
+                {
+                  "name": "East Side Gallery",
+                  "shortDesc": "Galería de arte al aire libre",
+                  "desc": "El mayor tramo que se conserva de los restos del Muro de Berlín mide 1,3 kilómetros y es conocido como East Side Gallery, la mayor galería de arte al aire libre del mundo. \n\nA lo largo del muro, se pueden ver cientos de graffitis de artistas procedentes de todo el mundo, que trataron de documentar mediante sus obras el cambio producido tras la caída del Muro de Berlín. \n\nMediante sus obras expresan una gran sensación de euforia y esperanza por un futuro libre y mejor. A través de las pinturas, los artistas trataron de manifestar sus protestas y mensajes como memoria de un momento histórico tan importante. \n\nBerlín es una ciudad que no olvida su reciente pasado. Los restos del muro forman ya parte de la ciudad y East Side Gallery es uno de los tramos más importantes que se conservan, por lo que no es necesario decir que su visita es más que obligatoria.",
+                  "img": "https://lp-cms-production.imgix.net/news/2018/11/east-wall-gallery.jpg?auto=format&q=75",
+                  "maps": "52.50551842580752,13.4414239696351",
+                  "url": "https://www.disfrutaberlin.com/east-side-gallery"
+                },
+                {
+                  "name": "Alexanderplatz",
+                  "shortDesc": "Popular plaza en el centro",
+                  "desc": "Alexanderplatz ha estado considerada el centro de Berlín desde la Edad Media. Ya en la Edad Media, cuando era conocida como Ochsenmarkt o Mercado del Buey, Alexanderplatz estaba considerada el centro de Berlín. Actualmente Alex, como la llaman muchos berlineses, continúa siendo uno de los principales puntos de reunión de la capital. \n\nAunque cuando uno llega hasta la Torre de la Televisión desde el centro de Berlín puede pensar que la plaza donde se encuentra es Alexanderplatz, lo cierto es que la plaza original se encuentra detrás de la torre. Actualmente todo está considerado lo mismo. \n\nEn la plaza original, además de algunos bares y de la Galería Kaufhof, un centro comercial al más puro estilo Corte Inglés, hay que fijarse en el Reloj Mundial, que señala la hora de todas las ciudades del mundo, y en la Fuente de la Amistad entre los Pueblos. Ambos monumentos fueron añadidos en 1969. \n\nEn la plaza ajardinada de la parte oeste de la torre se pueden destacar tres interesantes monumentos: la Iglesia Marienkirche, construida en 1380, la Fuente de Neptuno y el Ayuntamiento Rojo que, aunque fue utilizado por el gobierno, el nombre proviene del color de su ladrillo. \n\nDesde Alexanderplatz parten las grandes avenidas construidas durante la época comunista. Merece la pena destacar la Karl-Marx-Allee, una amplia avenida en la que es posible apreciar la arquitectura soviética.",
+                  "img": "https://traveldigg.com/wp-content/uploads/2016/06/Alexanderplatz_03.jpg",
+                  "maps": "52.52211558257012,13.413236633160029",
+                  "schedule": "Desde marzo hasta octubre: todos los días de 9:00 a 00:00 h.",
+                  "price": "25,50 €",
+                  "url": "https://www.disfrutaberlin.com/alexanderplatz"
+                },
+                {
+                  "name": "Catedral de Berlín",
+                  "shortDesc": "Iglesia evangélica del año 1747",
+                  "desc": "Construida entre 1894 y 1905, la Catedral de Berlín (Berliner Dom) es el edificio religioso más representativo de la ciudad. Conoce todo sobre esta catedral que no ha alojado nunca a un obispo católico. \n\nLa Catedral de Berlín (Berliner Dom) se alza majestuosa en las proximidades del Río Spree, coronada por una cúpula de cobre de color verdoso. \n\nSe trata del edificio religioso más representativo de Berlín, situado enfrente del jardín Lustgarten, entre la Isla de los Museos y el solar antes ocupado por el Palacio Imperial. \n\nLos sótanos de la Catedral de Berlín guardan un importante tesoro, la Cripta de los Hohenzollern, conocida por alojar los sarcófagos de los miembros de la dinastía Hohenzollern.",
+                  "img": "https://i.pinimg.com/originals/a5/93/6c/a5936cad8a4c19af2786f107a96ce19c.jpg",
+                  "maps": "52.51915217054236,13.401550065452003",
+                  "schedule": "De lunes a jueves: de 10:00 a 18:00 h. \nViernes: de 10:00 a 19:00 h. \nSábado: de 10:00 a 17:00 h. \nDomingo: de 12:00 a 17:00 h.",
+                  "price": "9 €",
+                  "url": "https://www.disfrutaberlin.com/catedral-berlin"
+                },
+                {
+                  "name": "Puerta de Brandergurbo",
+                  "shortDesc": "Monumento neoclásico del siglo XVIII",
+                  "desc": "La Puerta de Brandeburgo (Brandenburger Tor) es una de las antiguas puertas de entrada a Berlín además de uno de los símbolos más importantes de la ciudad. En español el nombre más correcto es Puerta de Brandeburgo, aunque también se la conoce como Puerta de Brandemburgo o Brandenburgo. \n\nInaugurada en 1791 junto a la Pariser Platz, la Puerta de Brandeburgo es un símbolo del triunfo de la paz sobre las armas. \n\nSe trata de una enorme construcción de 26 metros de alto que, con su estilo neoclásico, recuerda a las construcciones de la Acrópolis de Atenas. \n\nEn 1795, el monumento fue coronado con una cuadriga de cobre que representa a la Diosa de la Victoria en un carro tirado por cuatro caballos en dirección a la ciudad. La estatua que se puede ver hoy en día, es una copia hecha en Berlín oeste en 1969, ya que la original quedó destruida durante la Segunda Guerra Mundial. \n\nAunque la puerta tiene cinco entradas, desde su construcción hasta el año 1918, el paso central de la puerta sólo podía ser utilizado por miembros de la familia real y algunos pocos afortunados.",
+                  "img": "https://i.pinimg.com/originals/dd/1a/d9/dd1ad98997dadf7fbfdc5cbe787ca977.jpg",
+                  "maps": "52.51641167840323,13.378294182652128",
+                  "url": "https://www.disfrutaberlin.com/puerta-brandenburgo"
+                },
+                {
+                  "name": "Palacio de Chalottenburg",
+                  "shortDesc": "Residencia campestre del siglo XVII",
+                  "desc": "El Palacio Charlottenburg, construido entre 1695 y 1699 en un estilo barroco, fue diseñado como lugar de veraneo de Sofía Carlota, segunda esposa de Federico III. \n\nTras la coronación de Federico como Rey de Prusia, en 1702, el Palacio Charlottenburg fue remodelado para su ampliación, aunque la reina Sofía Carlota no vivió para ver la obra finalizada. En 1705, tras su muerte, el palacio, antes llamado Lietzenburg, y el distrito en el que se encuentra, pasaron a llamarse Charlottenburg en su honor. \n\nEn 1943, los bombardeos de la fuerza aérea británica sobre Berlín destruyeron parcialmente el palacio y una gran parte de la decoración del edificio que no pudo ser restaurada por completo.",
+                  "img": "https://guias-viajar.com/wp-content/uploads/2014/07/berlin-jardines-charlottenburg-001.jpg",
+                  "maps": "52.52105590752733,13.296110023124943",
+                  "schedule": "Desde abril hasta octubre: de martes a domingo de 10:00 a 18:00 h. \nLunes: Cerrado",
+                  "price": "17 €",
+                  "url": "https://www.disfrutaberlin.com/palacio-charlottenburg"
+                }
+              ]
+            },
+            {
+              "day": "3",
+              "dayWeek": "LUN",
+              "places": [
+                {
+                  "name": "Sachenhausen",
+                  "shortDesc": "Campo de concentración",
+                  "desc": "El Campo de Concentración de Sachsenhausen fue construido en 1936 por prisioneros de otros campos de concentración. El recinto, ideado como campo de concentración típico e ideal, trataba de plasmar la imagen del mundo del nacionalsocialismo y someter a los prisioneros al poder de las SS. \n\nEntre 1936 y 1945 más de 200.000 presos vivieron en el campo de concentración. Los primeros prisioneros eran adversarios políticos del régimen nacionalsocialista pero, más tarde, comenzaron a apresar también a algunos grupos que los nazis consideraban inferiores tanto racial como biológicamente. \n\nFueron muchos miles los que perecieron debido a las enfermedades, los trabajos forzados y el hambre, o bien fueron víctimas de las técnicas de exterminio masivo empleadas por las SS. \n\nEl 22 y 23 de abril de 1945, cuando la pesadilla hubo terminado, los soldados liberaron a más de 3.000 enfermos y médicos que aún se encontraban en el campo.",
+                  "img": "https://www.civitatis.com/f/alemania/berlin/excursion-campo-concentracion-sachsenhausen-r32.jpg",
+                  "maps": "52.767217294542554,13.263215686379588",
+                  "schedule": "Del 15 de marzo al 14 de octubre: todos los días de 8:30 a 18:00 h.",
+                  "price": "26€",
+                  "url": "https://www.disfrutaberlin.com/campo-concentracion-sachsenhausen"
+                },
+                {
+                  "name": "Postdamerplatz",
+                  "shortDesc": "Plaza moderna de la ciudad",
+                  "desc": "Potsdamer Platz, una de las plazas más bulliciosas de Berlín en el pasado, quedó arrasada durante la Segunda Guerra Mundial y partida en dos por el Muro de Berlín. Hoy en día, la plaza completamente reformada vuelve a brillar con el esplendor anterior a la guerra. \n\nPotsdamer Platz fue el lugar del desarrollo de una densa actividad comercial y cultural durante el siglo XIX y aún se conservan algunos restos de esa evolución, como es el primer semáforo de toda Europa, que funcionaba manualmente. \n\nTras la guerra y la posterior construcción del Muro, la destrozada Potsdamer Platz se convirtió en un terreno vacío olvidado junto a éste. \n\nFue tras la caída del Muro de Berlín cuando la plaza se convirtió en una atractiva área urbanizable que los arquitectos utilizaron para edificar una serie de edificios representativos del nuevo Berlín unificado. \n\nAunque aún se conservan algunos restos del muro para su recuerdo, la plaza fue reconstruida recientemente para pasar a formar parte del Berlín moderno.",
+                  "img": "https://i.pinimg.com/originals/9d/33/b2/9d33b29fe602b205a8e2426010369906.jpg",
+                  "maps": "52.50978306210002,13.376558846221142",
+                  "url": "https://www.disfrutaberlin.com/potsdamer-platz"
+                },
+                {
+                  "name": "Monumento del Holocausto",
+                  "shortDesc": "Monumento a judíos asesinados",
+                  "desc": "Formado por 2.711 bloques de hormigón de diferentes alturas, el Monumento al Holocausto de Berlín es una joya arquitectónica construida en memoria de los judíos asesinados en Europa que recuerda uno de los episodios más oscuros de la humanidad. \n\nEdificado en las cercanías de la Puerta de Brandenburgo entre los años 2003 y 2005, el monumento en memoria de los judíos asesinados en Europa pretende enfrentarse a la noción de monumento en sí misma. La traducción literal del nombre alemán es Monumento memorial a los judíos asesinados en Europa. \n\nSe trata de una cuadrícula formada por 2.711 bloques de hormigón de diferentes alturas, que permite que los visitantes elijan su camino de entrada y salida como si se tratara de un laberinto. \n\nDesde el sureste del monumento, se puede acceder a un espacio subterráneo en el que se ubica el centro de información.",
+                  "img": "https://static.eldiario.es/clip/25ec265d-fca2-40f1-a770-d62abdfbfa85_16-9-aspect-ratio_default_0.jpg",
+                  "maps": "52.514025722745025,13.379474444034322",
+                  "url": "https://www.disfrutaberlin.com/monumento-holocausto"
+                },
+                {
+                  "name": "Bunker de Hitler",
+                  "shortDesc": "Refugio antiaéreo",
+                  "desc": "El búnker de Hitler o búnker del Führer, fue un refugio antiaéreo ubicado cerca de la Cancillería del Reich en Berlín. Formaba parte de un complejo subterráneo de búnkeres construido en dos fases en 1936 y 1944. Fue el último cuartel general utilizado por Adolf Hitler durante la Segunda Guerra Mundial. \n\nHitler se instaló en el Führerbunker el 16 de enero de 1945 y lo convirtió en el centro de operaciones del régimen hasta la última semana de la guerra en Europa. Allí se casó con Eva Braun el 29 de abril de 1945, menos de cuarenta horas antes de suicidarse. \n\nDespués de la guerra, los antiguos y nuevos edificios de la Cancillería fueron arrasados por los soviéticos. El complejo subterráneo permaneció prácticamente intacto hasta 1988-1989, a pesar de algunos intentos de demolición. Las secciones excavadas del antiguo complejo de búnkeres fueron destruidas principalmente durante la reconstrucción de esa área de Berlín. El sitio permaneció sin identificar hasta 2006, cuando se instaló una pequeña placa con un diagrama esquemático. Aún existen algunos pasillos del búnker, pero están cerrados al público.",
+                  "img": "https://vivreaberlin.com/wp-content/uploads/2016/10/bunker-im-hagel.jpg",
+                  "maps": "0,0",
+                  "url": "https://www.berlin-welcomecard.de/es/socio/berlin-story-bunker-tour"
+                },
+                {
+                  "name": "Topografía el terror",
+                  "shortDesc": "Museo lleno de historia",
+                  "desc": "Oculta detrás de un trozo del muro que se mantiene prácticamente intacto, se encuentra un solar en el que se sitúa la Topografía del Terror, un lugar con una historia escalofriante. \n\nEn 1933 el edificio neobarroco que ocupaba ese lugar se convirtió en la sede de la temida GESTAPO, la Policía Secreta del Estado. Los que se oponían al régimen de Hitler acababan allí, donde eran sometidos a interrogatorios y continuas torturas en los sótanos del edificio. \n\nPara la gente especialmente interesada en la historia, la Topografía del Terror es un lugar realmente interesante, pero es necesario tomarse bastante tiempo para leer los textos que acompañan a cada una de las fotografías.",
+                  "img": "https://i.pinimg.com/originals/2e/b3/09/2eb30987406282a8088f5f208706b2b5.jpg",
+                  "maps": "52.506851456722956,13.382647741846556",
+                  "schedule": "Todos los días de 10:00 a 20:00 horas.",
+                  "price": "0 €",
+                  "url": "https://www.disfrutaberlin.com/topografia-terror"
+                },
+                {
+                  "name": "Checkpoint Charlie",
+                  "shortDesc": "Cruce fronterizo del Muro",
+                  "desc": "Checkpoint Charlie fue el punto de paso más conocido de los utilizados durante la Guerra Fría. En él se podía conseguir el visado diurno para cruzar a Berlín Este desde Berlín Oeste. \n\nLa denominación Charlie tiene un significado mucho más sencillo de lo que podría parecer ya que procede de la tercera letra (C) del alfabeto fonético de la OTAN. \n\nDespués de la construcción del Muro de Berlín, quedaron pocas fronteras a través de las cuáles los ciudadanos pudieran moverse entre las dos alemanias. El alcalde de Berlín Occidental consiguió que sus ciudadanos pudieran visitar la parte oriental con algunas restricciones y Checkpoint Charlie era el lugar de acceso. \n\nAdemás de las personas que cruzaron la frontera con permiso, hubo muchos ciudadanos que huyeron de Berlín Este engañando a los militares que controlaban Checkpoint Charlie. Algunos tuvieron suerte y escaparon de las formas más habilidosas pero, algunos otros, fueron interceptados y asesinados sin piedad. \n\nUno de los casos más conocidos de intento de fuga fallido fue el de Peter Fechter que, cuando estuvo a punto de lograr la libertad, fue disparado por militares de la RDA, que lo dejaron morir desangrado ante la impotente mirada de los militares y ciudadanos de Berlín Oeste que deseaban ayudarlo.",
+                  "img": "https://i0.wp.com/www.ux-republic.com/wp-content/uploads/2019/03/checkpoint-charlie.jpeg?ssl=1",
+                  "maps": "52.50758812206215,13.390987040324292",
+                  "url": "https://www.disfrutaberlin.com/checkpoint-charlie"
+                }
+              ]
+            },
+            {
+              "day": "4",
+              "dayWeek": "MAR",
+              "places": [
+                {
+                  "name": "Berliner Ulterwelten",
+                  "shortDesc": "Ciudad subterránea bajo Berlín",
+                  "desc": "Aunque inicialmente Hitler aseguró que la Luftwaffe alemana no dejaría que ningún otro país bombardeara las ciudades alemanas, cuando comenzó el declive alemán en la II Guerra Mundial, comenzó la construcción de búnkeres en las principales ciudades, especialmente en Berlín. \n\nDurante la Guerra Fría, este sistema de túneles y búnkeres adquirió especial importancia y en algunos casos fue mejorado y preparado para un posible conflicto. \n\nNinguna de las dos alemanias invirtió demasiado tiempo en crear nuevos búnkeres o en preparar estos para un conflicto nuclear, ya que la posibilidad de ataques nucleares era inferior por tratarse de una ciudad dividida.",
+                  "img": "https://www.berliner-unterwelten.de/fileadmin/user_upload/berlinerunterwelten/Verein/Projekte/OP-Bunker_Teichstrasse/2012_OP_Teichstrasse_Frieder_Salm.jpg",
+                  "maps": "52.55013516933209,13.386206314867978",
+                  "schedule": "Horario de taquilla: todos los días de 10:00 a 16:00 horas",
+                  "price": "15 €",
+                  "url": "https://www.disfrutaberlin.com/berliner-unterwelten"
+                },
+                {
+                  "name": "Mauerpark",
+                  "shortDesc": "Parque público (parque del muro)",
+                  "desc": "Uno de los lugares más concurridos de Berlín cada fin de semana es, sin duda, el parque de Mauerpark. Entre semana también encontrarás gente joven haciendo deporte o sentada en la hierba con amigos, pero el domingo es el día ideal para visitar el parque. \n\nCon sus puestos del mercadillo, comida para todos los gustos y el famoso karaoke, esta zona verde de 11.000 m² hace las delicias de todo turista en la capital alemana cada domingo. El Mauerpark se ha convertido en uno de los lugares imprescindibles para visitar en Berlín durante el fin de semana. \n\nEn el Mauerpark todo el mundo encuentra su rincón y eso explica las inmejorables opiniones de sus visitantes. Te descubrimos las actividades de uno de los parques más populares de Berlín.",
+                  "img": "https://www.mauerpark.info/wp-content/uploads/2020/06/mauerpark-erweiterung_DJI_0612.jpg",
+                  "maps": "52.542484796999695,13.403942082654021",
+                  "url": "https://www.visitberlin.de/es/mauerpark"
+                },
+                {
+                  "name": "Memorial muro Berlín",
+                  "shortDesc": "Recuerda la divisón alemana",
+                  "desc": "La construcción del Muro de Berlín y, especialmente su caída, han formado parte de los momentos más importantes de la historia del siglo XX. Este muro dividió Berlín en dos partes durante 28 años, separando a familias y amigos. \n\nAl finalizar la II Guerra Mundial, tras la división de Alemania, Berlín también quedó dividida en cuatro sectores de ocupación: soviético, estadounidense, francés e inglés. Las malas relaciones entre los comunistas y los aliados fueron creciendo hasta llegar al punto en que surgieron dos monedas, dos ideales políticos y, finalmente, dos alemanias. \n\nEn 1949, los tres sectores occidentales (estadounidense, francés y británico) pasaron a llamarse República Federal Alemana (RFA) y el sector oriental (soviético) se convirtió en la República Democrática Alemana (RDA). \n\nBerlín quedó dividida y se crearon 81 puntos de paso entre las dos zonas de la ciudad.",
+                  "img": "https://lh3.googleusercontent.com/p/AF1QipNSFDClh2TNTnKWdW1r2PE0L03Lag30RseMUOM=s680-w680-h510",
+                  "maps": "52.53516954158533,13.39062967894396",
+                  "url": "https://www.disfrutaberlin.com/muro-berlin"
+                },
+                {
+                  "name": "Barrio judío",
+                  "shortDesc": "Zona del distrito de Mitte",
+                  "desc": "El Barrio Judío se encuentra al noroeste del centro histórico, entre Prenzlauer Berg en el Norte y la Isla de los Museos al Sur, entre la AlexanderPlatz al Este y la Friedrichstrasse al Oeste. Es uno de los barrios que más rápidamente se transformó a partir de la caída del Muro de Berlín en 1989.",
+                  "img": "https://queverenelmundo.com/guias/wp-content/uploads/Patios-Berlin.jpg",
+                  "maps": "52.52515714730525,13.405320538923467",
+                  "url": "https://www.laguiadeberlin.com/ruta-barrio-judio-berlin/"
+                },
+                {
+                  "name": "Palacio de Lágrimas",
+                  "shortDesc": "Museo con exposiciones",
+                  "desc": "La exposición permanente 'Lugar de la división alemana' documenta el destino del Tränenpalast. Entrevistas con testigos contemporáneos, biografías y 570 objetos originales ilustran la historia de 1962 a 1990. En los lugares donde antes se realizaban controles aduaneros, ahora hay maletas abiertas con objetos de recuerdo de los viajeros. La sensación en el estrecho pasillo del control de pasaportes sigue siendo opresiva. Se pudieron conservar numerosos carteles y mostrar las instrucciones en el paso fronterizo.",
+                  "img": "https://media.schott.com/api/public/content/62bd920897314b79b2bdd630a3b8f48f?v=14bfc37b&t=OnExW1200",
+                  "maps": "52.52085583878276,13.387637355670812",
+                  "schedule": "Martes 9:00 - 19:00 h.",
+                  "price": "0 €",
+                  "url": "https://www.visitberlin.de/es/tranenpalast-palacio-de-las-lagrimas"
+                }
+              ]
+            },
+            {
+              "day": "5",
+              "dayWeek": "MIÉ",
+              "places": [
+                {
+                  "name": "Parlamento alemán",
+                  "shortDesc": "Antiguo edificio del Reichstag",
+                  "desc": "El antiguo edificio del Reichstag es la sede del Parlamento Alemán (Bundestag Alemán). Se trata de un edificio histórico con aspecto de templo clásico, coronado por una gran cúpula moderna por la que se puede transitar. \n\nSituado junto a la línea que marca el Muro de Berlín, el Reichstag permaneció casi 29 años separado de la cercana Puerta de Brandenburgo.",
+                  "img": "https://www.viveberlintours.com/wp-content/uploads/2019/12/Il_Reichstag_en_Berlino.jpg",
+                  "maps": "52.51888786911623,13.376502646631266",
+                  "schedule": "Todos los días de 8:00 a 24:00 horas",
+                  "price": "0 €",
+                  "url": "https://www.disfrutaberlin.com/parlamento-aleman"
+                },
+                {
+                  "name": "Postdam",
+                  "shortDesc": "Ciudad cercana",
+                  "desc": "Situada a unos 20 kilómetros al suroeste de Berlín, Potsdam ofrece una combinación perfecta entre arte y naturaleza. \n\nFundada en el siglo VII como un pueblo eslavo bajo el nombre de Poztupimi, Potsdam tuvo la fortuna de ser elegida como residencia de caza de Federico Guillermo I en 1660. \n\nPosteriormente, la ciudad fue el lugar de residencia de la familia real prusiana, por lo que se llevó a cabo la construcción de una gran cantidad de espléndidos palacios que aún se conservan en la ciudad. \n\nEn 1990, Potsdam fue declarada Patrimonio de la Humanidad por la UNESCO gracias a sus hermosos palacios y jardines y, actualmente se ha convertido en una de las ciudades más visitadas de Alemania.",
+                  "img": "https://upload.wikimedia.org/wikipedia/commons/6/64/2018-08-10_DE_Potsdam%2C_Havel%2C_Potsdamer_Stadtschloss%2C_Charlottenhof_05609390_%2849952695592%29.jpg",
+                  "maps": "52.391387317337006,13.074776966760068",
+                  "schedule": "Todos los días",
+                  "price": "22 €",
+                  "url": "https://www.disfrutaberlin.com/potsdam"
+                }
+              ]
+            },
+            {
+              "day": "6",
+              "dayWeek": "JUE",
+              "places": [
+                {
+                  "name": "Prisión de Stasi",
+                  "shortDesc": "Memorial Berlín-Hohenschönhausen",
+                  "desc": "Se trata del Memorial Berlín-Hohenschönhausen y se sitúa en la antigua Prisión Central de la Seguridad del Estado (Stasi) de la República Democrática Alemana. Fue un centro de represión política que funciono entre 1951 y 1989 (tan reciente, que nosotros ¡ya habíamos nacido!). Aquí fueron detenidos y torturados física y psicológicamente desde reconocidos políticos hasta ciudadanos que intentaban escapar hacia Alemania Occidental y eran capturados. \n\nSe pueden realizar visitas guiadas en alemán o inglés (no hay visitas en español).",
+                  "img": "https://www.turismoberlin.es/wp-content/uploads/2014/08/prisi%C3%B3n-de-la-stasi.jpg",
+                  "maps": "52.51546423300369,13.49370277441864",
+                  "schedule": "Marzo - Octubre: 10 - 16 h.",
+                  "price": "6 €",
+                  "url": "https://www.mueroporviajar.com/berlin-la-prision-de-la-stasi-tiergarten/"
+                },
+                {
+                  "name": "Tiergarten",
+                  "shortDesc": "Parque público más grande",
+                  "desc": "El Tiergarten de Berlín es el equivalente al Central Park de Nueva York o al londinense Hyde Park: el pulmón verde de la metrópoli. Situado en el centro de la ciudad, cerca de atracciones turísticas como la Puerta de Brandemburgo, es, con sus 210 más grande incluso que el Hyde Park de Londres. \n\nA finales del s. XVII, el príncipe elector Federico III estableció un “parque de ocio para el pueblo” en el antiguo coto de caza. A lo largo del tiempo el parque fue reformándose según distintos modelos, especialmente entre 1833 y 1838, cuando el conocido diseñador de parques y jardines Peter Joseph Lenné, transformó el Tiergarten según el modelo inglés. \n\nEste parque es punto de encuentro para pasear, hacer picnics familiares, jugar a la pelota o simplemente descansar un rato. En verano, todos los domingos se pueden escuchar las campanas del carrillón. Se construyó en 1987 con motivo del 750 aniversario de la ciudad, cerca de la actual Casa de las Culturas del Mundo. La torre, de 42 metros de alto, constituye, con sus 68 campanas, el cuarto carrillón más grande del mundo.",
+                  "img": "https://api.estater.de/image-proxy/WqlLmMVBqAxI33hS1wNQqRKp-Rm_dM1Qd3dHem11hww/w:2048/h:1072/g:ce:0:0/rt:fill/q:85/bG9jYWw6Ly9zdG9yYWdlL2RhdGVpZW4vcGxhY2VzL0Jlcmxpbi1UaWVyZ2FydGVuL0FTMzAzMDI4ODkyX3RpZXJnYXJ0ZW5fMngxLmpwZWc.jpg",
+                  "maps": "52.51455831188845,13.36085553649474",
+                  "url": "https://berlinando.net/tiergarten/"
+                }
+              ]
+            },
+            {
+              "day": "7",
+              "dayWeek": "VIE",
+              "places": [
+                {
+                  "name": "Aeropuerto de Branderburgo",
+                  "shortDesc": "Rumbo a Múnich",
+                  "desc": "7 de julio - Lufthansa",
+                  "img": "https://fotos.perfil.com/2020/08/25/aeropuerto-brandenburgo-willy-brandt-de-berlin-20200825-1006596.jpg",
+                  "maps": "52.36475257669035,13.514460845646305",
+                  "url": "https://ber.berlin-airport.de/en.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Munich",
+          "dates": "7 al 11 de julio (2023)",
+          "travel": [
+            {
+              "day": "7",
+              "dayWeek": "VIE",
+              "places": [
+                {
+                  "name": "Neuschwanstein",
+                  "shortDesc": "Palacio de cuento",
+                  "desc": "El Palacio de Neuschwanstein está situado en el estado federado de Baviera cerca de Füssen (Alemania). Lo mandó construir el rey Luis II de Baviera en 1869. Su nombre original era Nuevo Palacio de Hohenschwangau, en honor al castillo donde el rey pasó gran parte de su infancia. El nombre fue cambiado después de la muerte del rey. Es el edificio más fotografiado de Alemania y uno de los destinos turísticos más populares en ese país, con 1,4 millones de visitantes anuales. \n\nEl palacio de Neuschwanstein se construyó en una época en que los castillos y las fortalezas ya no eran necesarios desde el punto de vista estratégico. Nació en la imaginación de Luis II como una pura fantasía romántica de un castillo medieval idealizado. El palacio es una composición de torres y muros que pretendía armonizarse con las montañas y los lagos. Está situado sobre el desfiladero de Pöllat en los Alpes Bávaros y se alza junto al castillo de Hohenschwangau y los lagos Alpsee y Schwan.",
+                  "img": "https://www.schloesser.bayern.de/bilder/schloss/neuschwanstein450.jpg",
+                  "maps": "47.55771877787541,10.748781156852962",
+                  "schedule": "Todos los días",
+                  "price": "65+27 €",
+                  "url": "https://www.disfrutamunich.com/castillo-neuschwanstein"
+                }
+              ]
+            },
+            {
+              "day": "8",
+              "dayWeek": "SÁB",
+              "places": [
+                {
+                  "name": "Neuschwanstein",
+                  "shortDesc": "Palacio de cuento",
+                  "desc": "El Palacio de Neuschwanstein está situado en el estado federado de Baviera cerca de Füssen (Alemania). Lo mandó construir el rey Luis II de Baviera en 1869. Su nombre original era Nuevo Palacio de Hohenschwangau, en honor al castillo donde el rey pasó gran parte de su infancia. El nombre fue cambiado después de la muerte del rey. Es el edificio más fotografiado de Alemania y uno de los destinos turísticos más populares en ese país, con 1,4 millones de visitantes anuales. \n\nEl palacio de Neuschwanstein se construyó en una época en que los castillos y las fortalezas ya no eran necesarios desde el punto de vista estratégico. Nació en la imaginación de Luis II como una pura fantasía romántica de un castillo medieval idealizado. El palacio es una composición de torres y muros que pretendía armonizarse con las montañas y los lagos. Está situado sobre el desfiladero de Pöllat en los Alpes Bávaros y se alza junto al castillo de Hohenschwangau y los lagos Alpsee y Schwan.",
+                  "img": "https://www.schloesser.bayern.de/bilder/schloss/neuschwanstein450.jpg",
+                  "maps": "47.55771877787541,10.748781156852962",
+                  "schedule": "Todos los días",
+                  "price": "65+27 €",
+                  "url": "https://www.disfrutamunich.com/castillo-neuschwanstein"
+                }
+              ]
+            },
+            {
+              "day": "9",
+              "dayWeek": "DOM",
+              "places": [
+                {
+                  "name": "Marienplatz",
+                  "shortDesc": "Plaza central de Múnich",
+                  "desc": "Marienplatz es el centro y el alma de Múnich desde tiempos inmemoriales. En ella se encuentran edificios tan importantes como el ayuntamiento. \n\nLa céntrica plaza conocida como Marienplatz es el centro y el corazón de Múnich desde su nacimiento. Originalmente la plaza se llamaba Schrannen, pero fue renombrada como la Plaza de Santa María para pedir a la Virgen que protegiera a la ciudad de la epidemia de cólera que la asediaba. \n\nMarienplatz ha sido el lugar de celebración de importantes eventos públicos y festejos desde tiempos inmemoriales, ya fueran celebraciones, torneos o ejecuciones. Con el paso de los años ha conservado su papel como corazón de la ciudad y continúa siendo uno de los puntos más importantes y queridos de Múnich.",
+                  "img": "https://www.civitatis.com/f/alemania/munich/guia/marienplatz-m.jpg",
+                  "maps": "48.137514888599654,11.576070768859788",
+                  "url": "https://www.disfrutamunich.com/marienplatz"
+                },
+                {
+                  "name": "Catedral de Munich",
+                  "shortDesc": "Iglesia del año 1494",
+                  "desc": "Construida sobre los restos de una antigua basílica romana entre 1468 y 1525, la Catedral de Nuestra Señora de Múnich es la iglesia más grande de la ciudad. \n\nEl exterior de la catedral fue construido en ladrillo rojo dotando al templo de un aspecto sencillo. Años más tarde se construyeron dos torres cubiertas por peculiares cúpulas de color verde. \n\nLa mayor parte del interior del templo quedó destruido durante la Segunda Guerra Mundial, por lo que resulta bastante simple, pero aún se conservan algunos tesoros como el altar de San Andrés, algunas de las vidrieras, o la tumba del emperador Luis IV de Baviera. \n\nUno de los detalles más llamativos en el interior es la conocida como 'Pisada del Diablo', una huella que según la leyenda fue dejada por el diablo durante su veloz huida cuando descubrió que había sido engañado por el constructor del templo.",
+                  "img": "https://www.101viajes.com/sites/default/files/catedral-nuestra-senora-munich.jpg",
+                  "maps": "48.13873836633714,11.573947261440832",
+                  "schedule": "Todos los días de 7:30 a 20:30 horas.",
+                  "price": "0 €",
+                  "url": "https://www.disfrutamunich.com/catedral-munich"
+                },
+                {
+                  "name": "Isartor",
+                  "shortDesc": "Una de las cuatro puertas medievales",
+                  "desc": "Construida en 1337 en la zona oriental de Múnich para ofrecer acceso a la ciudad a través de la muralla medieval, la Puerta de Isartor adquirió el nombre del río Isar debido a su cercanía con este. \n\nEn 1833 la puerta fue restaurada y durante la Segunda Guerra Mundial quedó seriamente dañada, pero fue reconstruida para conservar su aspecto original y aún conserva hermosos frescos de esta época, además de ser la única puerta de la ciudad que conserva su torre original. \n\nEn una de las torres se encuentra el museo dedicado al humorista Karl Valentin, aunque para los que no le conocen no tiene demasiada gracia.",
+                  "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Isartor.jpg",
+                  "maps": "48.13523147453057,11.581872211694334",
+                  "url": "https://www.disfrutamunich.com/puertas-ciudad-munich"
+                },
+                {
+                  "name": "Hofbrauhaus",
+                  "shortDesc": "Cervecería típica",
+                  "desc": "Con una historia que comenzó en 1589, la cervecería Hofbräuhaus se ha convertido en la cervecería estrella de Múnich y en una de las más famosas del mundo. \n\nEn 1828 la fábrica de cerveza fue trasladada y la cervecería abrió al público por decreto. La cervecería se convirtió en el centro de la vida pública y política de Múnich, contando con importantes personajes como Lenin como clientes asiduos. \n\nSu importancia como lugar de reunión en el mundo de la política convirtió la cervecería en testigo de importantes acontecimientos como la proclamación de la 'República Soviética de Múnich' o del programa de los 25 puntos por el que pasaría a regirse el partido nazi. \n\nLa cervecería quedó completamente destruida durante los bombardeos de 1945 y varios años después, en 1958, se inauguró la construcción actual.",
+                  "img": "https://www.civitatis.com/f/alemania/munich/guia/cerveceria-hofbrauhaus-m.jpg",
+                  "maps": "48.13774574415173,11.579925279392985",
+                  "schedule": "De 9:00 a 00:00 horas.",
+                  "price":"0 €",
+                  "url": "https://www.disfrutamunich.com/cerveceria-hofbrauhaus"
+                },
+                {
+                  "name": "Jardín Inglés",
+                  "shortDesc": "Parque urbano de los más grandes",
+                  "desc": "Localizado en el corazón de Múnich, The Englischer Garten (El Jardín Inglés) es un sorprendente pulmón verde de más de 400 hectáreas que constituye uno de los parques urbanos más grandes del mundo. \n\nEl jardín fue diseñado en 1789 en dos partes, una de ellas un jardín militar y la otra el primer parque público de la ciudad. En 1792 ambas partes se fusionaron y fueron abiertas al público.",
+                  "img": "https://elviajerofeliz.com/wp-content/uploads/2016/02/jardininglesportada.jpg",
+                  "maps": "48.164396861494396,11.606034993988487",
+                  "url": "https://www.disfrutamunich.com/englischer-garten"
+                },
+                {
+                  "name": "Olympiapark",
+                  "shortDesc": "Parque olímpico de Muncih",
+                  "desc": "Construido para los Juegos Olímpicos de 1972, Olympiapark (Parque Olímpico) es un pulmón verde de más de 300 hectáreas de extensión que en la actualidad constituye una una de las principales atracciones turísticas de Múnich. \n\nEl terreno que actualmente ocupa el Parque Olímpico fue utilizado por la armada hasta que, en 1925, pasó a formar parte del aeropuerto de la ciudad. \n\nTras la Segunda Guerra Mundial, gran parte de los escombros de la ciudad fueron llevados a la zona, pasando a convertirse en las actuales colinas del parque.",
+                  "img": "https://muniqueando.com/wp-content/uploads/2014/05/olympiapark_portada.jpg",
+                  "maps": "48.17557904379352,11.55270894744504",
+                  "url": "https://www.disfrutamunich.com/olympiapark"
+                },
+                {
+                  "name": "Iglesia de San Pedro",
+                  "shortDesc": "Iglesia parroquial del año 1294",
+                  "desc": "Localizada en el centro de Múnich, la Iglesia de San Pedro (Peterskirche), también conocida como Alter Peter, es el templo católico más antiguo de Alemania y uno de los principales emblemas de la ciudad.",
+                  "img": "https://www.guiadealemania.com/wp-content/uploads/2013/02/Vista-de-Alter-Peter-Munich-760x500.jpg",
+                  "maps": "48.13725818924949,11.573898111667818",
+                  "schedule": "Todos los días",
+                  "price": "2 €",
+                  "url": "https://www.disfrutamunich.com/iglesia-san-pedro"
+                },
+                {
+                  "name": "Odeonsplatz",
+                  "shortDesc": "Plaza del centro de la ciudad",
+                  "desc": "Odeonsplatz es una atractiva plaza rodeada por majestuosos edificios que fue diseñada como entrada triunfal para la ciudad de Múnich. \n\nConocida como la Plaza del Odeón debido a la gran sala de conciertos que se ubicaba en el lugar en el momento de su construcción, Odeonsplatz es una atractiva plaza rodeada por majestuosos edificios que fue diseñada como entrada triunfal para la ciudad.",
+                  "img": "https://www.viajarmunich.com/wp-content/uploads/odeonsplatz.jpg",
+                  "maps": "48.142408131799044,11.577535292885674",
+                  "url": "https://www.disfrutamunich.com/odeonsplatz"
+                },
+                {
+                  "name": "Palacio de Nymphenburg",
+                  "shortDesc": "Palacio de estilo barroco",
+                  "desc": "Nymphenburg es un precioso palacio construido como residencia de verano para la familia Wittelsbach. Sus enormes jardines son aún más espectaculares. \n\nConstruido en 1664 como residencia de verano para la familia Wittelsbach, el Palacio de Nymphenburg es una imponente construcción de estilo barroco que cuenta con un interior ricamente decorado. \n\nNymphenburg cuenta con un interior sorprendente en el que aún se conserva la decoración de la época, por lo que se pueden ver hermosos frescos, una colección de retratos, un bello salón de baile de estilo Rococó y numerosas salas que aún parecen estar habitadas.",
+                  "img": "https://www.civitatis.com/f/alemania/munich/guia/palacio-nymphenburg.jpg",
+                  "maps": "48.15836766832882,11.503754178642474",
+                  "schedule": "Todos los días de 9:00 a 18:00 h.",
+                  "price": "15 €",
+                  "url": "https://www.disfrutamunich.com/palacio-nymphenburg"
+                }
+              ]
+            },
+            {
+              "day": "10",
+              "dayWeek": "LUN",
+              "places": [
+                {
+                  "name": "Dachau",
+                  "shortDesc": "Campo concentración",
+                  "desc": "Localizado a 13 kilómetros al noroeste de Múnich, el Campo de Concentración de Dachau (Konzentrationslager Dachau) fue construido en 1933 para convertirse en el primer campo de concentración oficial. \n\nAunque en un principio Dachau fue utilizado para encerrar a los prisioneros políticos, pero pronto comenzó a llenarse de judíos, gitanos, homosexuales y testigos de Jehová. \n\nEntre los años 1933 y 1945 fueron internados más de 200.000 prisioneros de los que murieron varias decenas de miles, aunque lo más probable es que nunca se llegue a conocer el número exacto.",
+                  "img": "https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1300/v1615999273/dfy0fwabbkmgyghd4ar8.jpg",
+                  "maps": "48.27028377841462,11.469111717364376",
+                  "schedule": "Todos los días de 9:00 a 17:00 h.",
+                  "price": "24 €",
+                  "url": "https://www.disfrutamunich.com/campo-concentracion-dachau"
+                }
+              ]
+            },
+            {
+              "day": "11",
+              "dayWeek": "MAR",
+              "places": [
+                {
+                  "name": "Aeropuerto de FJ Strauss",
+                  "shortDesc": "Vuelta a Madrid",
+                  "desc": "11 de julio - Lufthansa",
+                  "img": "https://www.airport-munich.com/images/munich-airport.jpg",
+                  "maps": "48.351100284413256,11.777464666330538",
+                  "url": "https://www.munich-airport.de/"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reino Unido",
+      "cities": [
+        {
+          "name": "Londres",
+          "dates": "14 al 17 de agosto (2024)",
+          "travel": [
+            {
+              "day": "14",
+              "dayWeek": "MIÉ",
+              "places": [
+                {
+                  "name": "Aeropuerto Madrid Barajas",
+                  "shortDesc": "Rumbo a Londres",
+                  "desc": "14 de agosto - Iberia",
+                  "img": "https://images.adsttc.com/media/images/58ad/fea7/e58e/ce4c/d100/009f/medium_jpg/E03_Vista_exterior_dique_NET.jpg?1487797921",
+                  "maps": "40.49213220756998,-3.595880390418275",
+                  "url": "https://www.aena.es/es/adolfo-suarez-madrid-barajas.html"
+                },
+                {
+                  "name": "Candem Town",
+                  "shortDesc": "Mercado y atmósfera alternativa",
+                  "desc": "Comer en Camden Town\nEn el mercado de Camden hay muchos puestos de comida, los puestecillos móviles que se sitúan en la plaza, bastante más caros pero con mejor aspecto (y donde la comida está bastante más buena), y los puestos fijos que hay en los soportales, puestos de múltiples nacionalidades con comida de todo tipo, en los que venden bandejas de comida por 3 GBPo 4 £ (4,70 €).\n\nEs curioso comprobar cómo, a medida que pasa la mañana, van bajando los precios de la comida y acaban vendiendo las bandejas por 1 £ (1,20 €).\n\nTiendas de Camden Town\nDebido a sus peculiares habitantes, la mayoría de los locales que ocupan la calle son tiendas de ropa gótica o de tatuajes y piercings.\n\nDentro del propio mercado podréis encontrar cosas más interesantes para el público general. En el edificio de la plaza de los puestos de comida hay muchas tiendas y puestecillos con objetos curiosos.\n\nPara ir a Camden Town hay que reservar al menos una mañana entera, ya que es una zona bastante grande y tan distinta a las demás, que nadie queda indiferente. Si podéis elegir, el mejor día para ir es el domingo.\n\nEn Camden Town hay muchas tiendas curiosas, entre las que nos llama especialmente la atención una tienda llamada Cyberdog, en la que hay un Dj, gogós, música techno a todo volumen y ropa muy curiosa, que abarca desde prendas con implantes cibernéticos hasta trajes de astronauta.",
+                  "img": "https://www.civitatis.com/f/reino-unido/londres/visita-guiada-camden-town-589x392.jpg",
+                  "maps": "51.541696092093204, -0.14488778368623548",
+                  "url": "https://www.londres.es/camden-town"
+                },
+                {
+                  "name": "Tower of London",
+                  "shortDesc": "Residencia real, arsenal, fortaleza y prisión",
+                  "desc": "La torre del terror\nDurante más de 900 años la Torre de Londres (Tower of London) fue sinónimo de terror debido a que se trataba del lugar en el que eran encerrados todos aquellos que ofendían al monarca. La mayoría de los presos malvivieron en condiciones espantosas y no salieron con vida, o fueron torturados antes de ser ejecutados en la cercana Tower Hill (Colina de la Torre).\n\nFueron muchos los personajes de gran relevancia que tuvieron la desgracia de sufrir entre las paredes de la Torre de Londres, entre los que se incluyeron algunos reyes derrocados, aristócratas y clérigos acusados de traición. Algunos de los personajes más destacados entre los que fueron ejecutados en la Torre Verde fueron la reina consorte Ana Bolena, la reina Jane Grey, el barón William Hastings, o el pensador y escritor Tomás Moro.",
+                  "img": "https://www.londres.es/f/reino-unido/londres/guia/torre-de-londres-m.jpg",
+                  "maps": "51.508290602846344, -0.07543937954393863",
+                  "url": "https://www.londres.es/torre-de-londres"
+                },
+                {
+                  "name": "Tower Bridge",
+                  "shortDesc": "Puente levadizo",
+                  "desc": "Símbolo de la ciudad\nTower Bridge es uno de los símbolos más emblemáticos de Londres y suele convertirse en el blanco de las cámaras de fotos de todos los turistas. La visita al interior narra algunos aspectos interesantes sobre la construcción del puente, pero no la consideramos una visita imprescindible.\n\nEs muy común confundir Tower Bridge con London Bridge, un puente más austero, situado al este de Tower Bridge, que fue el primero en construirse para unir las dos orillas del Támesis.",
+                  "img": "https://www.qverlondres.com/wp-content/uploads/2014/11/Visitar-Puente-de-la-Torre-de-Londres.jpg",
+                  "maps": "51.505648285153, -0.07396443409092789",
+                  "url": "https://www.londres.es/tower-bridge"
+                },
+                {
+                  "name": "Catedral de San Pablo",
+                  "shortDesc": "Segunda caedral más grande del mundo",
+                  "desc": "La Catedral de San Pablo es un enorme templo con planta en forma de cruz que presenta una llamativa decoración, sobre todo en los preciosos techos decorados con pinturas al fresco.\n\nConviene realizar la visita con ayuda de la audio guía gratuita que se entrega en la entrada, ya que narra todos los detalles de interés acerca de cada rincón de la catedral.",
+                  "schedule": "Lunes a sábado - 08:30h a 16:30h",
+                  "price": "24,60 €",
+                  "img": "https://londresando.com/wp-content/uploads/sites/15/2018/02/catedral-san-pablo-londres-1-1024x671.jpeg",
+                  "maps": "51.51417621324654, -0.09844128311185643",
+                  "url": "https://www.londres.es/catedral-de-san-pablo"
+                }
+              ]
+            },
+            {
+              "day": "15",
+              "dayWeek": "JUE",
+              "places": [
+                {
+                  "name": "Estudios Harry Potter",
+                  "shortDesc": "Tour por los estudios Warner",
+                  "desc": "Nos encontraremos a las 7:30 horas en la estación de tren de York, desde donde pondremos rumbo a la estación londinense de King's Cross. Tras un viaje en tren de dos horas, tendréis que dirigiros por vuestra cuenta a Baker Street, donde os estará esperando el autobús que parte hacia los estudios Warner Bros. \n\nUna vez allí, tendréis cuatro horas y media de tiempo libre para adentraros en el mágico mundo de Harry Potter. ¡Es vuestro momento! Dentro de los estudios podréis conocer los escenarios de las exitosas películas de la saga, como el Gran Comedor, el despacho de Dumbledore, el Andén 9 y ¾ o el mismísimo Hogwarts Express. Además, podréis ver objetos tan emblemáticos como la Nimbus 2000 o la moto voladora de Hagrid. \n\nSi todo esto os parece poco, tranquilos, ¡hay mucho más! Gringotts, la cabaña de Hagrid, las tiendas de Quidditch y Ollivander, el aula de pociones o la sala común de Gryffindor serán otros de los lugares que os llevarán directamente al universo de Harry Potter.\n\nLa visita a los estudios os ofrece la oportunidad de probar la cerveza de mantequilla en el Studio Café, participar en las exposiciones interactivas y descubrir el funcionamiento de algunos efectos especiales y animatrónicos de las películas. ¡Perfecto para conocer cómo cobró vida Dobby! \n\nTras esta experiencia inolvidable, volveremos en autobús al centro de Londres. Desde aquí, tendréis que regresar a la estación de King's Cross. El tren de vuelta a York saldrá a las 19:30 horas, llegando al punto de partida a las 21:30 horas.",
+                  "img": "https://s32508.pcdn.co/wp-content/uploads/2019/06/Hogwarts-Castle-Model.jpg",
+                  "maps": "51.689891142926534, -0.41782463850197615",
+                  "schedule": "9:00 - 16:30h",
+                  "price": "301,20 €",
+                  "url": "https://www.civitatis.com/es/york/tour-harry-potter-warner-bros/"
+                },
+                {
+                  "name": "Chinatown",
+                  "shortDesc": "Barrio chino de Londres",
+                  "desc": "Chinatown no está carente de historia. La zona original se encontraba en la parte este de Londres, donde comenzaron a concentrarse miles de marineros chinos a finales del siglo XVIII. Éstos habían sido contratados en China pero, por razones diversas, habían tenido que ir quedándose a vivir en Londres.\n\nEn el año 1914, ya se habían abierto 30 negocios chinos en Limehouse, la mayoría para surtir a los propios marineros. Durante la Segunda Guerra Mundial la zona quedó destruida y encontrar trabajo en la marina era misión imposible para los extranjeros.\n\nA mitad del siglo XX los chinos que quedaban en Londres sufrían serias penurias. Por suerte para ellos, los soldados que volvían de Asia llegaban con ganas de seguir degustando comida asiática. En esa época se abrieron los primeros restaurantes en Gerrard Street, una calle con mucha reputación gastronómica internacional.\n\nLa popularidad de los restaurantes chinos atrajo a grandes emprendedores asiáticos que convirtieron la zona en la actual Chinatown de Londres.",
+                  "img": "https://chinatown.co.uk/wp-content/uploads/2023/11/paulrohodes20201130221_218-1200x800.jpeg",
+                  "maps": "51.51260782491294, -0.12855502833428675",
+                  "url": "https://www.londres.es/chinatown"
+                },
+                {
+                  "name": "Soho",
+                  "shortDesc": "Mayor zona de ocio de Londres",
+                  "desc": "Hasta hace poco, el Soho era famoso por sus sex-shops, pero a partir de los años 80 se llevó a cabo una transformación y en la actualidad se caracteriza sobre todo por sus restaurantes de gran categoría y sus oficinas periodísticas, aunque aún existen algunos espectáculos sexys.\n\nEn el centro del Soho, hay que destacar una pequeña plaza del mismo nombre que data de 1681, que tiene una zona de parque ajardinada y donde durante el verano se ofrecen conciertos al aire libre.\n\nLa música en vivo en las calles de este barrio es una parte muy importante de la zona y su presencia aquí se remonta a 1948 con el Club Eleven, hogar del jazz moderno en el Reino Unido.",
+                  "img": "https://www.qverlondres.com/wp-content/uploads/2019/10/Soho-londres-pubs-noche.jpg",
+                  "maps": "51.51363746930724, -0.1365936813966564",
+                  "url": "https://londresando.com/soho/"
+                }
+              ]
+            },
+            {
+              "day": "16",
+              "dayWeek": "VIE",
+              "places": [
+                {
+                  "name": "Museo de historia natural",
+                  "shortDesc": "70 millones de especímenes",
+                  "desc": "El Museo de Historia Natural de Londres fue construido entre 1873 y 1880 para acoger una gran colección de esqueletos, fósiles y plantas que hasta entonces formaba parte del Museo Británico. Año tras año la colección del museo fue creciendo y en 1986 absorbió el Museo Geológico que se encontraba en las cercanías.\n\nNada más entrar en el museo resulta impactante el enorme hall con una cuidada decoración en el que se exponen algunos animales de gran tamaño, como son el esqueleto de un enorme diplodocus y un mastodonte procedente de Chile.",
+                  "img": "https://www.thelondres.com/wp-content/uploads/2018/08/MuseoHistoriaNaturalLondres-ijnterior.jpg",
+                  "price": "0 €",
+                  "schedule": "10:00h",
+                  "maps": "51.49736851528001, -0.17611675963015008",
+                  "url": "https://www.londres.es/museo-historia-natural"
+                },
+                {
+                  "name": "Tienda de LEGO",
+                  "shortDesc": "Tienda de LEGO más grande del mundo",
+                  "desc": "Tienda donde se venden los vistosos juegos y bloques de construcción de la marca, además de figuras y juguetes.",
+                  "img": "https://www.brickfanatics.com/wp-content/uploads/2022/08/LEGO-Store-Leicester-Square-Harry-Potter-display.jpg",
+                  "maps": "51.51073109995877, -0.1290808203626506",
+                  "url": "https://www.qverlondres.com/londres-con-ninos/visitar-la-tienda-de-lego-en-londres/"
+                },
+                {
+                  "name": "Trafalgar Square",
+                  "shortDesc": "Conmemora victoria de la armada",
+                  "desc": "Trafalgar Square es una de las plazas más importantes de Londres. Fue creada en 1830 para conmemorar la victoria de la armada británica frente a la española y la francesa en la Batalla de Trafalgar.\n\nEn el centro de la plaza se alza la majestuosa Columna de Nelson, construida en 1843 en honor al almirante Nelson, fallecido mientras se encontraba al mando de la armada británica en la Batalla de Trafalgar.\n\nLa columna de granito de casi 50 metros de altura está coronada por una estatua del almirante Nelson y rodeada por cuatro leones de grandes dimensiones, construidos a partir del bronce fundido de los cañones de la flota francesa.\n\nEn la parte norte de la plaza se alza la majestuosa National Gallery y frente a ella se sitúan dos grandiosas fuentes que se iluminan cuando cae la noche.\n\nEn la plaza se pueden ver varias estatuas de personajes célebres entre las que destaca la de George Washington. Esta estatua, regalo del estado de Virginia, se encuentra situada sobre suelo importado de los Estados Unidos, ya que Washington juró no volver a poner un pie sobre suelo británico.",
+                  "img": "https://www.londres.es/f/reino-unido/londres/guia/trafalgar-square-m.jpg",
+                  "price": "Free Tour",
+                  "maps": "51.50808336528114, -0.127678770454059",
+                  "url": "https://www.londres.es/trafalgar-square"
+                },
+                {
+                  "name": "National Gallery",
+                  "shortDesc": "Museo de arte",
+                  "desc": "Los inicios de la National Gallery (Galería Nacional) se remontan al año 1824, cuando el estado británico compró los 38 cuadros de la colección privada del banquero John Julius Angerstein por 57.000 £ (66.948 €).\n\nA partir de ese momento, la galería comenzó un rápido e importante desarrollo y actualmente cuenta con más de 2.300 pinturas, de las que dos tercios han sido donaciones privadas.\n\nDesde su creación y debido al rápido crecimiento en el número de obras, la galería se ha visto obligada a cambiar de localización en diversas ocasiones. Actualmente, la galería se encuentra situada en su tercera ubicación, un edificio de notables extensiones creado por William Wilkins.",
+                  "img": "https://www.nationalgallery.org.uk/media/5p5hmpys/homepage-exterior-test.jpg",
+                  "price": "Free Tour",
+                  "maps": "51.508995768392055, -0.12800932233917778",
+                  "url": "https://www.londres.es/national-gallery"
+                },
+                {
+                  "name": "Palacio St. James",
+                  "shortDesc": "Estilo Tudor con ladrillo rojo",
+                  "desc": "El Palacio de St James fue antiguamente un monasterio medieval agustino que se convirtió en hospital para leprosos.\n\nEl hospital fue disuelto en 1532, y más tarde lo adquirió Enrique VIII junto a los terrenos de alrededor, lo que se convertiría en St James Park.\n\nEstá ubicado al norte de St James Park y se construyó en estilo Tudor con ladrillo rojo.\n\nAl incendiarse el Whitehall, el Palacio de St James se convirtió en la principal residencia real en Londres en 1698, durante el reinado de Guillermo III y María II.\n\nY lo fue durante más de tres siglos.",
+                  "img": "https://www.viajaralondres.com/wp-content/uploads/2014/09/StJamesPalace-lateral.jpg",
+                  "price": "Free Tour",
+                  "maps": "51.50463730670505, -0.13780105487051408",
+                  "url": "https://www.viajaralondres.com/lugares-para-visitar-en-londres/palacio-de-st-james/"
+                },
+                {
+                  "name": "Palacio de Buckingham",
+                  "shortDesc": "Residencia de la Familia Real Británica",
+                  "desc": "El Palacio de Buckingham es la residencia de la Familia Real Británica en Londres desde 1837. Actualmente, es el lugar de residencia de la reina Isabel II.\n\nConstruido en 1703 para el duque de Buckingham, el edificio fue adquirido por el rey Jorge III en 1762 para ser utilizado como residencia privada. Desde su construcción ha sido ampliado y remodelado en varias ocasiones.\n\nDurante las dos guerras mundiales el palacio sobrevivió de manera ejemplar. En la Primera Guerra Mundial tuvo la suerte de no ser atacado pero, durante la Segunda Guerra Mundial, fue bombardeado en diferentes ocasiones. El bombardeo más importante destruyó la capilla real en 1940.",
+                  "img": "https://cdn.britannica.com/94/148994-159-25B17024/Buckingham-Palace-Queen-Victoria-Memorial-London-statue.jpg",
+                  "price": "Free Tour",
+                  "schedule": "21 de julio - 31 de agosto:\n de 9:30 a 19:30 horas.",
+                  "maps": "51.501437364304124, -0.14134285052409615",
+                  "url": "https://www.londres.es/palacio-buckingham"
+                },
+                {
+                  "name": "St. James Park",
+                  "shortDesc": "Parque real más antiguo de la ciudad",
+                  "desc": "Situado cerca del Palacio de Buckingham, St James's Park es el parque real más antiguo de la ciudad. Es un pulmón verde en pleno centro de Londres.\n\nEn el año 1532, Enrique VIII compró el terreno de 23 hectáreas que constituye el parque, por aquél entonces sumido en una zona pantanosa. Después de drenar el pantano, Enrique VIII utilizó el terreno como uno de sus múltiples cotos privados de caza.\n\nA finales del siglo XVII, la zona fue transformada en un jardín de estilo francés y, posteriormente, Carlos II encargó la construcción del actual parque.",
+                  "img": "https://londresando.com/wp-content/uploads/sites/15/2022/03/St-James-Park-londres.jpeg",
+                  "price": "Free Tour",
+                  "maps": "51.50294872077416, -0.13430593349133738",
+                  "url": "https://www.londres.es/st-james-park"
+                },
+                {
+                  "name": "Abadía de Westminster",
+                  "shortDesc": "Templo más antiguo de Londres",
+                  "desc": "La abadía, construida con estilo románico, fue consagrada en el año 1065 para dar cobijo a los monjes benedictinos. Entre 1245 y 1517 fue reconstruida con un estilo gótico y durante el siglo XVIII sufrió su mayor transformación, tras la construcción de las dos torres de la entrada principal.\n\nA pesar de que la abadía fue incautada por Enrique VIII durante la disolución de los monasterios en 1534 y clausurada en 1540, se salvó de ser destruida gracias a que se encontraba bajo el control directo de la Corona de Inglaterra, fuera de la jurisdicción de la Iglesia. Estos fuertes lazos con la corona también lograron salvar la abadía de los ataques producidos por los iconoclastas durante 1640.\n\nDesde la coronación de Guillermo el Conquistador en el año 1066, todos los monarcas ingleses han sido coronados en la Abadía de Westminster utilizando un trono de coronación medieval del siglo XI que aún se conserva.\n\nAlgunos de los acontecimientos más recientes celebrados en la abadía han sido el 80 cumpleaños de la reina Isabel II o el funeral de la princesa Diana de Gales.",
+                  "img": "https://media.admagazine.com/photos/634da3e3540cc6f7dcac29d2/master/w_1600%2Cc_limit/GettyImages-590237253.jpg",
+                  "price": "Free Tour",
+                  "maps": "51.499152271869015, -0.12723081244894327",
+                  "url": "https://www.londres.es/abadia-de-westminster"
+                },
+                {
+                  "name": "Palacio de Westminster",
+                  "shortDesc": "Compone el Parlamento Británico.",
+                  "desc": "El antiguo palacio\nEn octubre de 1834, un asolador incendio destruyó el antiguo palacio que había alojado el Parlamento desde 1512. El edificio también había servido como residencia real en Londres desde la época de Guillermo el Conquistador.\n\nDel antiguo palacio sólo se pudo salvar una ínfima parte, compuesta por el Westminster Hall, los claustros y la cripta de St Stephens Chapel y la Jewel Tower, una construcción del siglo XIV en la que se guardaban las joyas y el oro.\n\nEl nuevo palacio\nDe los 97 proyectos presentados para la construcción del nuevo edificio, los ganadores del concurso fueron los arquitectos Charles Barry y Augustus Welby Pugin. En 1847 el edificio se veía prácticamente terminado con la construcción de 1.200 habitaciones, 11 patios y 3,5 kilómetros de pasillos.\n\nLa ostentosa fachada del edificio ofrece un bello panorama mientras los pináculos dorados y las estatuas de los reyes se reflejan en el río. El palacio se encuentra flanqueado por la Victoria Tower, una imponente torre que reúne las copias de todas las leyes del Parlamento desde 1497, y también por la carismática torre del Big Ben.",
+                  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Westminster_palace.jpg/800px-Westminster_palace.jpg",
+                  "price": "Free Tour",
+                  "maps": "51.49964084804066, -0.12385652527958424",
+                  "url": "https://www.londres.es/palacio-westminster"
+                },
+                {
+                  "name": "Big Ben",
+                  "shortDesc": "El reloj de las Casas del Parlamento",
+                  "desc": "La torre del Big Ben, construida en 1858 junto al nuevo Palacio de Westminster, constituye un peculiar edificio de 106 metros de altura construido en un estilo gótico que alberga cuatro enormes relojes situados en sus caras.\n\nAunque generalmente cuando hablamos del Big Ben nos referimos a la Torre del Reloj del edificio del Parlamento de Londres, esta denominación no es del todo exacta, ya que el Big Ben realmente es una enorme campana de 14 toneladas que se encuentra en el interior de la torre.",
+                  "img": "https://londresando.com/wp-content/uploads/sites/15/2022/03/big-ben-londres.jpeg",
+                  "price": "Free Tour",
+                  "maps": "51.50063260478327, -0.12466068714469364",
+                  "url": "https://www.londres.es/big-ben"
+                },
+                {
+                  "name": "London Eye",
+                  "shortDesc": "El reloj de las Casas del Parlamento",
+                  "desc": "Conocida como Millennium Wheel (Rueda del Milenio), The London Eye es un logro del diseño y la ingeniería, construido a lo largo de siete años por cientos de trabajadores provenientes de cinco países diferentes.\n\nTras su inauguración en el año 2000, la sorprendente noria de 135 metros de altura conocida como The London Eye (El Ojo de Londres) se ha convertido en uno de los iconos más emblemáticos de la ciudad y de toda Gran Bretaña.\n\nThe London Eye fue la mayor noria del mundo hasta el año 2006 cuando fue superada por la Estrella de Nachang en Nachang (China). En 2008, los 165 metros del Singapore Flyer marcaron un nuevo record.",
+                  "img": "https://t3.ftcdn.net/jpg/01/76/37/82/240_F_176378202_j54nmutR35i9OIj3PqoF2diT5QPVnhJM.jpg",
+                  "price": "42,30 €",
+                  "schedule": "De 10:00 a 20:30 horas.",
+                  "maps": "51.50299390554845, -0.1197143667968517",
+                  "url": "https://www.londres.es/london-eye"
+                }
+              ]
+            },
+            {
+              "day": "17",
+              "dayWeek": "SÁB",
+              "places": [
+                {
+                  "name": "Palacio de Buckingham",
+                  "shortDesc": "Cambio de guardia",
+                  "desc": "El Cambio de Guardia es una de las atracciones turísticas más importantes de Londres. Dura aproximadamente 45 minutos, en los cuales los guardias, coronados por enormes sombreros de pelo, realizan un desfile al ritmo de diferentes temas musicales, tanto militares, como de otros estilos más actuales.\n\nDurante la ceremonia, que se celebra en la entrada principal del Palacio de Buckingham, los guardias que se ocupan de la seguridad del palacio son relevados de un modo muy especial, acompañados por una banda musical militar.",
+                  "schedule": "Todos los días 11:00",
+                  "img": "https://media.revistaad.es/photos/631ae2ee0fec8fa36d3e84d3/16:9/w_2783,h_1565,c_limit/GettyImages-100500944.jpg",
+                  "maps": "51.501437364304124, -0.14134285052409615",
+                  "url": "https://www.londres.es/cambio-de-guardia"
+                },
+                {
+                  "name": "Aeropuerto de Heathrow",
+                  "shortDesc": "Vuelta a Madrid",
+                  "desc": "17 de agosto - Iberia",
+                  "img": "https://cdn.londonandpartners.com/asset/ec7d114d43cbcb1469ad090844d85423.jpg",
+                  "maps": "51.46814175136514, -0.45502954507030824",
+                  "url": "https://www.heathrow.com/es"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
