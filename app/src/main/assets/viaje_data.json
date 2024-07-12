@@ -6,6 +6,7 @@
         {
           "name": "Berlín",
           "dates": "1 al 7 de julio (2023)",
+          "booking": "52.49463099502936, 13.438340669368404",
           "travel": [
             {
               "day": "1",
@@ -250,6 +251,7 @@
         {
           "name": "Munich",
           "dates": "7 al 11 de julio (2023)",
+          "booking": "48.126492135768316, 11.55325865710553",
           "travel": [
             {
               "day": "7",
@@ -409,6 +411,7 @@
         {
           "name": "Londres",
           "dates": "14 al 17 de agosto (2024)",
+          "booking": "51.51412822372855, -0.20732076019902757",
           "travel": [
             {
               "day": "14",

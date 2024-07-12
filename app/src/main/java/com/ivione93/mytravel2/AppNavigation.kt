@@ -50,7 +50,7 @@ fun AppNavigation(modifier: Modifier = Modifier) {
                 .flatMap { it.travel }
                 .flatMap { it.places }
                 .find { it.name == placeName }
-            lugar?.let { PlaceScreen(modifier, it) }
+            lugar?.let { PlaceScreen(modifier, it, navController) }
         }
     }
 }

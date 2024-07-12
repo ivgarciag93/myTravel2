@@ -1,8 +1,9 @@
 package com.ivione93.mytravel2.screens
 
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -16,8 +17,12 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBackIosNew
+import androidx.compose.material.icons.filled.Bed
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.outlined.ArrowBackIosNew
+import androidx.compose.material.icons.outlined.Bed
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -35,9 +40,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -51,18 +55,22 @@ import com.ivione93.mytravel2.models.Place
 fun CityScreen(modifier: Modifier, city: City, navController: NavController, onPlaceClick: (Place) -> Unit) {
 
     var daySelected by remember { mutableStateOf("0") }
+    val context = LocalContext.current
+    val mapsIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("geo:${city.booking}")) }
 
     Scaffold(
         topBar = {
             TopAppBar(
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(imageVector = Icons.Default.KeyboardArrowLeft, contentDescription = "back")
+                        Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "back", Modifier.size(16.dp), tint = Color(0xff142D55))
                     }
                 },
-                title = { Text(city.name) },
+                title = { Text(city.name, color = Color(0xff142D55)) },
                 actions = {
-                    Icon(imageVector = Icons.Default.Place, contentDescription = "booking", modifier = Modifier.padding(end = 8.dp))
+                    IconButton(onClick = { context.startActivity(mapsIntent) }) {
+                        Icon(imageVector = Icons.Outlined.Bed, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
+                    }
                 }
             )
         }
@@ -77,7 +85,7 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
                         .padding(start = 8.dp)
                         .clickable { daySelected = day.day },
                         colors = CardDefaults.cardColors(
-                            containerColor = if(daySelected == day.day) Color(0xff0856CF) else Color(0xff0856CF).copy(alpha = 0.2f),
+                            containerColor = if(daySelected == day.day) Color(0xff4B92FF) else Color(0xff0856CF).copy(alpha = 0.2f),
                             contentColor = if(daySelected == day.day) Color.White else Color(0xff142D55)
                         ),
                         shape = RoundedCornerShape(8.dp)
@@ -144,47 +152,6 @@ fun PlaceCard(place: Place, onPlaceClick: (Place) -> Unit) {
                     )
                     Text(
                         text = place.shortDesc,
-                        color = Color.White
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun ImageCard() {
-    Card(
-        modifier = Modifier
-            .padding(16.dp)
-            .fillMaxWidth(),
-        shape = RoundedCornerShape(16.dp)
-    ) {
-        Box() {
-            Image(
-                painter = rememberAsyncImagePainter(model = "https://concepto.de/wp-content/uploads/2020/12/imagen-e1607991781485.jpg"),
-                contentDescription = null,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp),
-                contentScale = ContentScale.Crop
-            )
-            Card(
-                modifier = Modifier
-                    .align(Alignment.BottomStart)
-                    .padding(8.dp),
-                colors = CardDefaults.cardColors(
-                    containerColor = Color.Black.copy(alpha = 0.5f)
-                ),
-                shape = RoundedCornerShape(8.dp),
-            ) {
-                Column(modifier = Modifier.padding(8.dp)) {
-                    Text(
-                        text = "Titulo",
-                        color = Color.White
-                    )
-                    Text(
-                        text = "Subtitulo",
                         color = Color.White
                     )
                 }

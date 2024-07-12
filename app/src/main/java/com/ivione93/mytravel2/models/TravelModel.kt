@@ -12,6 +12,7 @@ data class Country (
 data class City (
     val name: String,
     val dates: String,
+    val booking: String,
     val travel: List<Travel>)
 
 data class Travel (
