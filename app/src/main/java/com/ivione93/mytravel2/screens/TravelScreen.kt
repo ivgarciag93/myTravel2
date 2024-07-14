@@ -12,11 +12,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material.icons.filled.DateRange
-import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.TravelExplore
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -30,14 +28,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.googlefonts.Font
-import androidx.compose.ui.text.googlefonts.GoogleFont
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ivione93.mytravel2.AppNavigation
 import com.ivione93.mytravel2.models.City
 import com.ivione93.mytravel2.models.TravelModel
+import com.ivione93.mytravel2.ui.theme.MyTypography
+
 
 @Composable
 fun TravelScreen(modifier: Modifier, travelModel: TravelModel, onCityClick: (City) -> Unit) {
@@ -50,7 +48,8 @@ fun TravelScreen(modifier: Modifier, travelModel: TravelModel, onCityClick: (Cit
                     text = country.name,
                     color = Color(0xff142D55),
                     fontSize = 30.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = MyTypography.fontFamily
                 )
                 country.cities.forEach { city ->
                     CityCard(city, onCityClick)
@@ -66,7 +65,6 @@ fun MyHeader(modifier: Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .height(200.dp)
-            //.background(Color(0xff4B92FF))
             .background(
                 brush = Brush.verticalGradient(
                     colors = listOf(Color(0xff4B92FF), Color(0xff4B92FF).copy(0.02f))
@@ -79,7 +77,7 @@ fun MyHeader(modifier: Modifier) {
             Modifier
                 .size(70.dp)
                 .padding(horizontal = 8.dp), tint = Color.White)
-        Text(text = "MyTravel", color = Color.White, fontSize = 40.sp, fontWeight = FontWeight.Bold)
+        Text(text = "MyTravel", color = Color.White, fontSize = 40.sp, fontWeight = FontWeight.Bold, fontFamily = MyTypography.fontFamily)
     }
 }
 
@@ -105,10 +103,10 @@ fun CityCard(city: City, onCityClick: (City) -> Unit) {
                     .fillMaxWidth()
                     .weight(1f)
             ) {
-                Text(text = "Explorar ${city.name}", fontSize = 26.sp, fontWeight = FontWeight.Bold, color = Color(0xff142D55))
+                Text(text = "Explorar ${city.name}", fontSize = 26.sp, fontWeight = FontWeight.Bold, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
                 Row {
                     Icon(imageVector = Icons.Filled.DateRange, contentDescription = "Calendario", tint = Color(0xff142D55))
-                    Text(text = city.dates, fontSize = 18.sp, color = Color(0xff142D55))
+                    Text(text = city.dates, fontSize = 18.sp, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
                 }
 
             }
@@ -120,7 +118,9 @@ fun CityCard(city: City, onCityClick: (City) -> Unit) {
                     contentColor = Color.White
                 )
             ) {
-                Icon(imageVector = Icons.Filled.ArrowBackIosNew, modifier = Modifier.rotate(180f).size(20.dp), contentDescription = "Home")
+                Icon(imageVector = Icons.Filled.ArrowBackIosNew, modifier = Modifier
+                    .rotate(180f)
+                    .size(20.dp), contentDescription = "Home")
             }
         }
     }

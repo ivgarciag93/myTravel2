@@ -17,12 +17,8 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBackIosNew
-import androidx.compose.material.icons.filled.Bed
-import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.outlined.ArrowBackIosNew
 import androidx.compose.material.icons.outlined.Bed
-import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -48,6 +44,7 @@ import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 import com.ivione93.mytravel2.models.City
 import com.ivione93.mytravel2.models.Place
+import com.ivione93.mytravel2.ui.theme.MyTypography
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -56,7 +53,8 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
 
     var daySelected by remember { mutableStateOf("0") }
     val context = LocalContext.current
-    val mapsIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("geo:${city.booking}")) }
+    val mapsIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("geo:${city.booking}?q=${city.booking}")) }
+    mapsIntent.setPackage("com.google.android.apps.maps")
 
     Scaffold(
         topBar = {
@@ -66,9 +64,11 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
                         Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "back", Modifier.size(16.dp), tint = Color(0xff142D55))
                     }
                 },
-                title = { Text(city.name, color = Color(0xff142D55)) },
+                title = { Text(city.name, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily) },
                 actions = {
-                    IconButton(onClick = { context.startActivity(mapsIntent) }) {
+                    IconButton(onClick = {
+                        context.startActivity(mapsIntent)
+                    }) {
                         Icon(imageVector = Icons.Outlined.Bed, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
                 }
@@ -95,8 +95,8 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
                             .align(Alignment.CenterHorizontally),
                             verticalArrangement = Arrangement.Center,
                             horizontalAlignment = Alignment.CenterHorizontally) {
-                            Text(text = day.dayWeek)
-                            Text(text = day.day, fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                            Text(text = day.dayWeek, fontFamily = MyTypography.fontFamily)
+                            Text(text = day.day, fontWeight = FontWeight.Bold, fontSize = 20.sp, fontFamily = MyTypography.fontFamily)
                         }
                     }
                 }
@@ -140,7 +140,7 @@ fun PlaceCard(place: Place, onPlaceClick: (Place) -> Unit) {
                     .align(Alignment.BottomStart)
                     .padding(8.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = Color.Black.copy(alpha = 0.5f)
+                    containerColor = Color.Black.copy(alpha = 0.4f)
                 ),
                 shape = RoundedCornerShape(8.dp),
             ) {
@@ -148,12 +148,34 @@ fun PlaceCard(place: Place, onPlaceClick: (Place) -> Unit) {
                     Text(
                         text = place.name,
                         color = Color.White,
-                        fontWeight = FontWeight.Bold, fontSize = 20.sp
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp,
+                        fontFamily = MyTypography.fontFamily
                     )
                     Text(
                         text = place.shortDesc,
-                        color = Color.White
+                        color = Color.White,
+                        fontFamily = MyTypography.fontFamily
                     )
+                }
+            }
+            if (place.price != null) {
+                Card(
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .padding(8.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xff0856CF).copy(alpha = 0.4f)
+                    ),
+                    shape = RoundedCornerShape(8.dp),
+                ) {
+                    Column(modifier = Modifier.padding(8.dp)) {
+                        Text(
+                            text = place.price,
+                            color = Color.White,
+                            fontFamily = MyTypography.fontFamily
+                        )
+                    }
                 }
             }
         }

@@ -50,6 +50,7 @@ import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 import com.ivione93.mytravel2.models.Place
 import com.ivione93.mytravel2.models.TravelInfo
+import com.ivione93.mytravel2.ui.theme.MyTypography
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -58,7 +59,8 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
 
     val context = LocalContext.current
     val infoIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse(place.url)) }
-    val mapsIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("geo:${place.maps}")) }
+    val mapsIntent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("geo:${place.maps}?q=${place.maps}")) }
+    mapsIntent.setPackage("com.google.android.apps.maps")
 
     // Airports info
     val fromMadridBerlin = TravelInfo("1 de julio", "3h 05min", "Origen", "MAD", "Barajas, T4", "15:55h")
@@ -89,7 +91,9 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
                     IconButton(onClick = { context.startActivity(infoIntent) }) {
                         Icon(imageVector = Icons.Outlined.Info, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
-                    IconButton(onClick = { context.startActivity(mapsIntent) }) {
+                    IconButton(onClick = {
+                        context.startActivity(mapsIntent)
+                    }) {
                         Icon(imageVector = Icons.Outlined.Directions, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
                 }
@@ -103,7 +107,13 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
             Spacer(modifier = Modifier.height(4.dp))
             PlaceImage(place = place, navController)
             Spacer(modifier = Modifier.height(8.dp))
-            Text(text = place.name, fontSize = 26.sp, fontWeight = FontWeight.Bold, color = Color(0xff142D55), modifier = Modifier.padding(start = 8.dp))
+            Text(
+                text = place.name,
+                fontSize = 26.sp,
+                fontWeight = FontWeight.Bold,
+                fontFamily = MyTypography.fontFamily,
+                color = Color(0xff142D55),
+                modifier = Modifier.padding(start = 8.dp))
             Spacer(modifier = Modifier.height(8.dp))
             Column(modifier = Modifier
                 .verticalScroll(rememberScrollState())
@@ -116,11 +126,12 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
                     text = place.shortDesc,
                     fontSize = 20.sp,
                     fontWeight = FontWeight.Bold,
+                    fontFamily = MyTypography.fontFamily,
                     color = Color(0xff142D55)
                 )
                 MyDivider()
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = place.desc)
+                Text(text = place.desc, fontFamily = MyTypography.fontFamily)
                 if(place.name.contains("Aeropuerto")) {
                     when (place.desc) {
                         "1 de julio - Iberia" -> {
@@ -183,9 +194,9 @@ fun PlaceSchedulePrice(place: Place) {
                 .fillMaxWidth()
                 .padding(8.dp),
             verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceAround) {
-            Text(place.price!!, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55))
+            Text(place.price!!, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
             Spacer(modifier = Modifier.width(16.dp))
-            Text(place.schedule!!)
+            Text(place.schedule!!, fontFamily = MyTypography.fontFamily)
         }
     }
     
@@ -220,7 +231,7 @@ fun TravelCard(from: TravelInfo, to: TravelInfo) {
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff4B92FF), modifier = Modifier.size(8.dp))
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff4B92FF), modifier = Modifier.size(8.dp))
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff4B92FF), modifier = Modifier.size(8.dp))
-            Text(text = to.duration, color = Color(0xff4B92FF))
+            Text(text = to.duration, color = Color(0xff4B92FF), fontFamily = MyTypography.fontFamily)
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff0856CF).copy(alpha = 0.2f), modifier = Modifier.size(8.dp))
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff0856CF).copy(alpha = 0.2f), modifier = Modifier.size(8.dp))
             Icon(imageVector = Icons.Filled.Circle, contentDescription = "point", tint = Color(0xff0856CF).copy(alpha = 0.2f), modifier = Modifier.size(8.dp))
@@ -229,17 +240,17 @@ fun TravelCard(from: TravelInfo, to: TravelInfo) {
         }
         Column(
             Modifier
-                .fillMaxWidth().padding(top = 4.dp)
+                .fillMaxWidth().padding(top = 2.dp)
                 .weight(2f),
                 horizontalAlignment = Alignment.Start, verticalArrangement = Arrangement.SpaceBetween) {
             Column {
-                Text(from.flight)
-                Text(from.airport, fontWeight = FontWeight.Bold, color = Color(0xff142D55))
+                Text(from.flight, fontFamily = MyTypography.fontFamily)
+                Text(from.airport, fontWeight = FontWeight.Bold, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
             }
             Spacer(modifier = Modifier.height(40.dp))
             Column {
-                Text(to.flight)
-                Text(to.airport, fontWeight = FontWeight.Bold, color = Color(0xff142D55))
+                Text(to.flight, fontFamily = MyTypography.fontFamily)
+                Text(to.airport, fontWeight = FontWeight.Bold, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
             }
         }
         Column(
@@ -247,13 +258,13 @@ fun TravelCard(from: TravelInfo, to: TravelInfo) {
                 .fillMaxWidth().padding(top = 4.dp)
                 .weight(1f), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.SpaceEvenly) {
             Column {
-                Text(from.country, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55))
-                Text(from.time)
+                Text(from.country, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
+                Text(from.time, fontFamily = MyTypography.fontFamily)
             }
             Icon(imageVector = Icons.AutoMirrored.Outlined.CompareArrows, contentDescription = "arrows", modifier = Modifier.rotate(90f).size(32.dp), tint = Color(0xff4B92FF))
             Column {
-                Text(to.time)
-                Text(to.country, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55))
+                Text(to.time, fontFamily = MyTypography.fontFamily)
+                Text(to.country, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
             }
         }
     }
