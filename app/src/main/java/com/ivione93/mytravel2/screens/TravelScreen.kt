@@ -28,10 +28,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ivione93.mytravel2.AppNavigation
+import com.ivione93.mytravel2.R
 import com.ivione93.mytravel2.models.City
 import com.ivione93.mytravel2.models.TravelModel
 import com.ivione93.mytravel2.ui.theme.MyTypography
@@ -73,9 +75,9 @@ fun MyHeader(modifier: Modifier) {
             .padding(8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Icon(imageVector = Icons.Default.TravelExplore, contentDescription = "Logo",
+        Icon(painter = painterResource(id = R.drawable.logo), contentDescription = "Logo",
             Modifier
-                .size(70.dp)
+                .size(100.dp)
                 .padding(horizontal = 8.dp), tint = Color.White)
         Text(text = "MyTravel", color = Color.White, fontSize = 40.sp, fontWeight = FontWeight.Bold, fontFamily = MyTypography.fontFamily)
     }

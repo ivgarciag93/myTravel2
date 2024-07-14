@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MyTravel2</string>
+    <string name="app_name">MyTravel</string>
+    <string name="version">1.0</string>
 </resources>

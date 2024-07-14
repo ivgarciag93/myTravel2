@@ -13,6 +13,7 @@ import com.google.gson.Gson
 import com.ivione93.mytravel2.models.TravelModel
 import com.ivione93.mytravel2.screens.CityScreen
 import com.ivione93.mytravel2.screens.PlaceScreen
+import com.ivione93.mytravel2.screens.SplashScreen
 import com.ivione93.mytravel2.screens.TravelScreen
 import java.io.InputStreamReader
 
@@ -22,7 +23,8 @@ fun AppNavigation(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
     val travelModel = loadTravel(LocalContext.current)
 
-    NavHost(navController, startDestination = "travel") {
+    NavHost(navController, startDestination = "splash") {
+        composable("splash") { SplashScreen(navController = navController)}
         composable("travel") {
             TravelScreen(modifier, travelModel) { city ->
                 navController.navigate("city/${city.name}")
