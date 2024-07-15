@@ -41,7 +41,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import coil.compose.AsyncImage
 import coil.compose.rememberAsyncImagePainter
+import coil.request.ImageRequest
 import com.ivione93.mytravel2.models.City
 import com.ivione93.mytravel2.models.Place
 import com.ivione93.mytravel2.ui.theme.MyTypography
@@ -61,7 +63,7 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
             TopAppBar(
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "back", Modifier.size(16.dp), tint = Color(0xff142D55))
+                        Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "backCity", Modifier.size(16.dp), tint = Color(0xff142D55))
                     }
                 },
                 title = { Text(city.name, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily) },
@@ -69,7 +71,7 @@ fun CityScreen(modifier: Modifier, city: City, navController: NavController, onP
                     IconButton(onClick = {
                         context.startActivity(mapsIntent)
                     }) {
-                        Icon(imageVector = Icons.Outlined.Bed, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
+                        Icon(imageVector = Icons.Outlined.Bed, contentDescription = "booking", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
                 }
             )
@@ -127,14 +129,23 @@ fun PlaceCard(place: Place, onPlaceClick: (Place) -> Unit) {
         shape = RoundedCornerShape(16.dp)
     ) {
         Box() {
-            Image(
-                painter = rememberAsyncImagePainter(model = place.img),
+            AsyncImage(model = ImageRequest.Builder(LocalContext.current)
+                .data(place.img)
+                .crossfade(true)
+                .build(),
+                contentDescription = "backgroundPlace",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(200.dp),
+                contentScale = ContentScale.Crop)
+            /*Image(
+                painter = rememberAsyncImagePainter(model = place.img, ),
                 contentDescription = null,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(200.dp),
                 contentScale = ContentScale.Crop
-            )
+            )*/
             Card(
                 modifier = Modifier
                     .align(Alignment.BottomStart)

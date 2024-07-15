@@ -53,6 +53,7 @@ fun TravelScreen(modifier: Modifier, travelModel: TravelModel, onCityClick: (Cit
                     fontWeight = FontWeight.Bold,
                     fontFamily = MyTypography.fontFamily
                 )
+                Spacer(modifier = Modifier.height(8.dp))
                 country.cities.forEach { city ->
                     CityCard(city, onCityClick)
                 }
@@ -65,7 +66,7 @@ fun TravelScreen(modifier: Modifier, travelModel: TravelModel, onCityClick: (Cit
 fun MyHeader(modifier: Modifier) {
     Box(
         modifier = modifier
-            .height(200.dp)
+            .height(180.dp)
             .fillMaxWidth()
     ) {
         Canvas(
@@ -128,14 +129,14 @@ fun CityCard(city: City, onCityClick: (City) -> Unit) {
             ) {
                 Text(text = "Explorar ${city.name}", fontSize = 26.sp, fontWeight = FontWeight.Bold, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
                 Row {
-                    Icon(imageVector = Icons.Filled.DateRange, contentDescription = "Calendario", tint = Color(0xff142D55))
+                    Icon(imageVector = Icons.Filled.DateRange, contentDescription = "calendar", tint = Color(0xff142D55), modifier = Modifier.padding(end = 4.dp))
                     Text(text = city.dates, fontSize = 18.sp, color = Color(0xff142D55), fontFamily = MyTypography.fontFamily)
                 }
 
             }
             IconButton(
-                onClick = {},
-                modifier = Modifier.size(30.dp),
+                onClick = { onCityClick(city) },
+                modifier = Modifier.size(32.dp),
                 colors = IconButtonDefaults.iconButtonColors(
                     containerColor = Color(0xff4B92FF),
                     contentColor = Color.White
@@ -143,7 +144,7 @@ fun CityCard(city: City, onCityClick: (City) -> Unit) {
             ) {
                 Icon(imageVector = Icons.Filled.ArrowBackIosNew, modifier = Modifier
                     .rotate(180f)
-                    .size(20.dp), contentDescription = "Home")
+                    .size(20.dp), contentDescription = "goCity")
             }
         }
     }

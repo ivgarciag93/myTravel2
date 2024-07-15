@@ -47,7 +47,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import coil.compose.AsyncImage
 import coil.compose.rememberAsyncImagePainter
+import coil.request.ImageRequest
 import com.ivione93.mytravel2.models.Place
 import com.ivione93.mytravel2.models.TravelInfo
 import com.ivione93.mytravel2.ui.theme.MyTypography
@@ -83,18 +85,18 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
             TopAppBar(
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "back", Modifier.size(16.dp), tint = Color(0xff142D55))
+                        Icon(imageVector = Icons.Outlined.ArrowBackIosNew, contentDescription = "backPlace", Modifier.size(16.dp), tint = Color(0xff142D55))
                     }
                 },
                 title = { Text(text = "") },
                 actions = {
                     IconButton(onClick = { context.startActivity(infoIntent) }) {
-                        Icon(imageVector = Icons.Outlined.Info, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
+                        Icon(imageVector = Icons.Outlined.Info, contentDescription = "info", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
                     IconButton(onClick = {
                         context.startActivity(mapsIntent)
                     }) {
-                        Icon(imageVector = Icons.Outlined.Directions, contentDescription = "back", Modifier.size(24.dp), tint = Color(0xff142D55))
+                        Icon(imageVector = Icons.Outlined.Directions, contentDescription = "maps", Modifier.size(24.dp), tint = Color(0xff142D55))
                     }
                 }
             )
@@ -171,15 +173,15 @@ fun PlaceImage(place: Place, navController: NavController) {
         ),
         shape = RoundedCornerShape(16.dp)
     ) {
-
-        Image(
-            painter = rememberAsyncImagePainter(model = place.img),
-            contentDescription = null,
+        AsyncImage(model = ImageRequest.Builder(LocalContext.current)
+            .data(place.img)
+            .crossfade(true)
+            .build(),
+            contentDescription = "background",
             modifier = Modifier
                 .fillMaxWidth()
                 .height(250.dp),
-            contentScale = ContentScale.Crop
-        )
+            contentScale = ContentScale.Crop)
     }
 }
 
