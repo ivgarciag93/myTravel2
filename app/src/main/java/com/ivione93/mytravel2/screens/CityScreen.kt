@@ -138,14 +138,6 @@ fun PlaceCard(place: Place, onPlaceClick: (Place) -> Unit) {
                     .fillMaxWidth()
                     .height(200.dp),
                 contentScale = ContentScale.Crop)
-            /*Image(
-                painter = rememberAsyncImagePainter(model = place.img, ),
-                contentDescription = null,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp),
-                contentScale = ContentScale.Crop
-            )*/
             Card(
                 modifier = Modifier
                     .align(Alignment.BottomStart)
