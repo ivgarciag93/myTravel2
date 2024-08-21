@@ -26,6 +26,7 @@ data class Place (
     val shortDesc: String,
     val desc: String,
     val img: String,
+    val imgMe: String?,
     val maps: String,
     val url: String,
     val schedule: String? = null,

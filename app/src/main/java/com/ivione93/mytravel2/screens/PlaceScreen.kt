@@ -1,7 +1,10 @@
 package com.ivione93.mytravel2.screens
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -41,8 +44,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -50,9 +55,11 @@ import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
+import com.ivione93.mytravel2.R
 import com.ivione93.mytravel2.models.Place
 import com.ivione93.mytravel2.models.TravelInfo
 import com.ivione93.mytravel2.ui.theme.MyTypography
+import java.io.InputStream
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -74,11 +81,11 @@ fun PlaceScreen(modifier: Modifier, place: Place, navController: NavController) 
     val fromMunichMadrid = TravelInfo("11 de julio", "2h 40min", "Origen", "MUN", "FJ Strauss, T2", "12:00h")
     val toMadridMunich = TravelInfo("7 de julio", "2h 40min", "Llegada", "MAD", "Barajas, T2", "14:40h")
 
-    val fromMadridLondon = TravelInfo("14 de agosto", "1h 30min", "Origen", "MAD", "Barajas", "08:00h")
-    val toLondonMadrid = TravelInfo("14 de agosto", "1h 30min", "Llegada", "LON", "Heathrow", "09:30h")
+    val fromMadridLondon = TravelInfo("14 de agosto", "1h 30min", "Origen", "MAD", "Barajas, T4S", "08:00h")
+    val toLondonMadrid = TravelInfo("14 de agosto", "1h 30min", "Llegada", "LON", "Heathrow, T5", "09:30h")
 
-    val fromLondonMadrid = TravelInfo("17 de agosto", "3h 25min", "Origen", "LON", "Heathrow", "18:45h")
-    val toMadridLondon = TravelInfo("17 de agosto", "3h 25min", "Llegada", "MAD", "Barajas", "22:10h")
+    val fromLondonMadrid = TravelInfo("17 de agosto", "3h 25min", "Origen", "LON", "Heathrow, T5", "18:45h")
+    val toMadridLondon = TravelInfo("17 de agosto", "3h 25min", "Llegada", "MAD", "Barajas, T4S", "22:10h")
 
     Scaffold(
         topBar = {
@@ -173,15 +180,49 @@ fun PlaceImage(place: Place, navController: NavController) {
         ),
         shape = RoundedCornerShape(16.dp)
     ) {
-        AsyncImage(model = ImageRequest.Builder(LocalContext.current)
-            .data(place.img)
-            .crossfade(true)
-            .build(),
-            contentDescription = "background",
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(250.dp),
+        if (place.imgMe != null) {
+            val context = LocalContext.current
+            LoadImageFromAssets(context, place.imgMe)
+        }
+        else {
+            AsyncImage(model = ImageRequest.Builder(LocalContext.current)
+                .data(place.img)
+                .crossfade(true)
+                .build(),
+                contentDescription = "background",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(250.dp),
+                contentScale = ContentScale.Crop)
+        }
+    }
+}
+
+@Composable
+fun LoadImageFromAssets(context: Context, assetPath: String) {
+    // Lee el archivo desde assets y conviértelo a Bitmap
+    val bitmap: Bitmap? = loadBitmapFromAssets(context, assetPath)
+
+    // Si el bitmap es nulo, puedes mostrar una imagen por defecto
+    if (bitmap != null) {
+        Image(bitmap = bitmap.asImageBitmap(), contentDescription = null)
+    } else {
+        // Imagen por defecto si no se encuentra la imagen
+        Image(painter = painterResource(id = R.drawable.logo), contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(250.dp),
             contentScale = ContentScale.Crop)
+    }
+}
+
+// Función para cargar el Bitmap desde assets
+fun loadBitmapFromAssets(context: Context, assetPath: String): Bitmap? {
+    return try {
+        val inputStream: InputStream = context.assets.open(assetPath)
+        BitmapFactory.decodeStream(inputStream)
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
     }
 }
 

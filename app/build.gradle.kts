@@ -11,8 +11,8 @@ android {
         applicationId = "com.ivione93.mytravel2"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.1"
+        versionCode = 4
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
